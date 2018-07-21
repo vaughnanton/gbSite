@@ -24,6 +24,8 @@ html, body {
   min-height:100%;
   color:#000;
 	background-color:#fafafa;
+	background-image: url(../img/bgtile.jpg);
+	background-repeat: repeat;
 }
 
 .land {
@@ -55,9 +57,9 @@ a {
 /* header */
 
 .header-primary {
-  position: fixed;
+  position: absolute;
   background-color:#00000045;
-  color:#fff;
+  color:#000;
   top:0;
   left:0;
   width:100%;
@@ -77,10 +79,6 @@ a {
 
 .header-right a:hover {
 	animation: color ease-in-out;
-}
-
-.header-right a {
-	color: #fff;
 }
 
 .decorate {
@@ -236,7 +234,7 @@ footer {
 	height:54px;
 	margin:0 auto;
 	width:100%;
-	background-color:#00000045;
+	background-color:#ffffff47;
 	text-align:center;
 }
 
