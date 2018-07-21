@@ -42,7 +42,7 @@ html, body {
 	height: 100%;
 	background-size: cover;
 	background-position: top center;
-	background-image: url(img/bg.jpg);
+	background-image: url(../img/bg.jpg);
 }
 
 a {
@@ -96,6 +96,7 @@ a {
 
 .image-title {
   z-index: 10;
+	font-size:7em;
   color: #000;
   position: absolute;
   text-align:center;
