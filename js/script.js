@@ -1,5 +1,31 @@
+$(document).ready(function() {
+    var img1 = $('.img1'),
+    img2 = $('.img2'),
+    img3 = $('.img3'),
+    img4 = $('.img4'),
+    img5 = $('.img5');
 
+    var imgarr = [ img1, img2, img3, img4, img5 ];
 
+for (var i = 0; i < imgarr.length; i++) {
+  $(this).css('visibility', 'visible');
+}
+
+});
+
+// overlay
+
+function openNav() {
+    document.getElementById("overlay").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("overlay").style.width = "0%";
+}
+
+$('#contact').click(function() {
+  openNav();
+});
 
 //typewriter for land
 
