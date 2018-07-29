@@ -286,6 +286,14 @@ footer {
 	letter-spacing: 1px;
 }
 
+/* media queries */
+
+@media (max-width:600px) {
+	.overlay {
+		font-size:25px;
+	}
+}
+
 /* overlay */
 
 /* The Overlay (background) */
