@@ -290,7 +290,10 @@ footer {
 
 @media (max-width:600px) {
 	.overlay {
-		font-size:25px;
+		font-size:25px!important;
+	}
+	footer {
+		font-size:11px;
 	}
 }
 
