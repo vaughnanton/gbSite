@@ -248,7 +248,7 @@ var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
 if(isIphone && isSafari){
     console.log("Mobile Safari!");
-    $('.link-wrapper').css("bottom", "150px");
+    $('.link-wrapper').css("bottom", "135px");
 } else {
     console.log("Not Mobile Safari...");
 }
