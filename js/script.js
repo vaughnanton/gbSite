@@ -238,6 +238,21 @@ $("#getstarted").click(function() {
     }, 1500);
 });
 
+//detect mobile safari ONLY
+
+var isIphone = /(iPhone)/i.test(navigator.userAgent);
+
+var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+
+
+if(isIphone && isSafari){
+    console.log("Mobile Safari!");
+    $('.link-wrapper').css({"bottom", "70px"});
+} else {
+    console.log("Not Mobile Safari...");
+}
+
 
 //typewriter for land
 var TxtType = function(el, toRotate, period) {
