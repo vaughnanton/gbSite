@@ -22,6 +22,7 @@ time, mark, audio, video {
 html, body {
 	font-family: 'Questrial', sans-serif;
   min-height:100%;
+	width:100vw;
   color:#000;
 	background-color:#fafafa;
 	background-image: url(../img/bgtile.jpg);
@@ -52,6 +53,36 @@ html, body {
 a {
 	text-decoration:none;
 	color:#000;
+}
+
+/* titles */
+
+.hero-image {
+	white-space:nowrap;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+}
+
+.hero-title {
+	display:inline-block;
+	margin:0 0.25em;
+	z-index:100000;
+}
+
+.jumbo {
+	line-height:1;
+	font-size:110px;
+	letter-spacing:-5px;
+}
+
+@media (min-width:768px) {
+	.jumbo {
+		font-size:200px;
+		letter-spacing:-6px;
+	}
 }
 
 /* header */
@@ -174,10 +205,6 @@ a {
   position: relative;
 }
 
-.active {
-	visibility:visible;
-}
-
 .image-block {
 	padding-top:50px;
   width: 100%;
@@ -188,6 +215,22 @@ a {
 .image-block img:nth-of-type(2), .image-block img:nth-of-type(3), .image-block img:nth-of-type(4), .image-block img:nth-of-type(5), .image-block img:nth-of-type(6) {
 	position:absolute;
 	top:100px;
+}
+
+.image-block img {
+	visibility:hidden;
+}
+
+.active {
+	visibility:visible !important;
+}
+
+.img22, .img19, .img20, .img21, .img26 {
+	padding-top:25px;
+}
+
+.img27 {
+	margin-top:-20px;
 }
 
 .container-fluid {

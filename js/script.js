@@ -1,20 +1,219 @@
 $(document).ready(function() {
-    var img1 = $('.img1'),
-    img2 = $('.img2'),
-    img3 = $('.img3'),
-    img4 = $('.img4'),
-    img5 = $('.img5');
+    block1();
+    block2();
+    block3();
+    block4();
+    block5();
+    block6();
+    block7();
+    block8();
 
-    var imgarr = [ img1, img2, img3, img4, img5 ];
+    setInterval(function(){
+      block1();
+    }, 6000);
+    setInterval(function(){
+      block2();
+    }, 3900);
+    setInterval(function(){
+      block3();
+    }, 3000);
+    setInterval(function(){
+      block4();
+    }, 6000);
+    setInterval(function(){
+      block5();
+    }, 6000);
+    setInterval(function(){
+      block6();
+    }, 6500);
+    setInterval(function(){
+      block7();
+    }, 4800);
+    setInterval(function(){
+      block8();
+    }, 2800);
 
-for (var i = 0; i < imgarr.length; i++) {
-  $(this).css('visibility', 'visible');
-}
+    function block1() {
+      $('.img1').addClass('active');
+    setTimeout(function() {
+      $('.img1').removeClass('active');
+    }, 1500);
+    setTimeout(function() {
+      $('.img2').addClass('active');
+    }, 1500);
+    setTimeout(function() {
+      $('.img2').removeClass('active');
+    }, 3000);
+    setTimeout(function() {
+      $('.img3').addClass('active');
+    }, 3000);
+    setTimeout(function() {
+      $('.img3').removeClass('active');
+    }, 4500);
+    setTimeout(function() {
+      $('.img4').addClass('active');
+    }, 4500);
+    setTimeout(function() {
+      $('.img4').removeClass('active');
+    }, 6000);
+    }
+
+    function block2() {
+      $('.img5').addClass('active');
+    setTimeout(function() {
+      $('.img5').removeClass('active');
+    }, 1300);
+    setTimeout(function() {
+      $('.img6').addClass('active');
+    }, 1300);
+    setTimeout(function() {
+      $('.img6').removeClass('active');
+    }, 2600);
+    setTimeout(function() {
+      $('.img7').addClass('active');
+    }, 2600);
+    setTimeout(function() {
+      $('.img7').removeClass('active');
+    }, 3900);
+    }
+
+    function block3() {
+      $('.img8').addClass('active');
+    setTimeout(function() {
+      $('.img8').removeClass('active');
+    }, 1500);
+    setTimeout(function() {
+      $('.img9').addClass('active');
+    }, 1500);
+    setTimeout(function() {
+      $('.img9').removeClass('active');
+    }, 3000);
+    }
+
+    function block4() {
+      $('.img10').addClass('active');
+    setTimeout(function() {
+      $('.img10').removeClass('active');
+    }, 1600);
+    setTimeout(function() {
+      $('.img11').addClass('active');
+    }, 1600);
+    setTimeout(function() {
+      $('.img11').removeClass('active');
+    }, 3200);
+    setTimeout(function() {
+      $('.img12').addClass('active');
+    }, 3200);
+    setTimeout(function() {
+      $('.img12').removeClass('active');
+    }, 4800);
+    setTimeout(function() {
+      $('.img13').addClass('active');
+    }, 4800);
+    setTimeout(function() {
+      $('.img13').removeClass('active');
+    }, 6400);
+    }
+
+    function block5() {
+      $('.img14').addClass('active');
+    setTimeout(function() {
+      $('.img14').removeClass('active');
+    }, 1500);
+    setTimeout(function() {
+      $('.img15').addClass('active');
+    }, 1500);
+    setTimeout(function() {
+      $('.img15').removeClass('active');
+    }, 3000);
+    setTimeout(function() {
+      $('.img16').addClass('active');
+    }, 3000);
+    setTimeout(function() {
+      $('.img16').removeClass('active');
+    }, 4500);
+    setTimeout(function() {
+      $('.img17').addClass('active');
+    }, 4500);
+    setTimeout(function() {
+      $('.img17').removeClass('active');
+    }, 6000);
+    }
+
+    function block6() {
+      $('.img18').addClass('active');
+    setTimeout(function() {
+      $('.img18').removeClass('active');
+    }, 1300);
+    setTimeout(function() {
+      $('.img19').addClass('active');
+    }, 1300);
+    setTimeout(function() {
+      $('.img19').removeClass('active');
+    }, 2600);
+    setTimeout(function() {
+      $('.img20').addClass('active');
+    }, 2600);
+    setTimeout(function() {
+      $('.img20').removeClass('active');
+    }, 3900);
+    setTimeout(function() {
+      $('.img21').addClass('active');
+    }, 3900);
+    setTimeout(function() {
+      $('.img21').removeClass('active');
+    }, 5200);
+    setTimeout(function() {
+      $('.img22').addClass('active');
+    }, 5200);
+    setTimeout(function() {
+      $('.img22').removeClass('active');
+    }, 6500);
+    }
+
+    function block7() {
+      $('.img25').addClass('active');
+    setTimeout(function() {
+      $('.img25').removeClass('active');
+    }, 1600);
+    setTimeout(function() {
+      $('.img26').addClass('active');
+    }, 1600);
+    setTimeout(function() {
+      $('.img26').removeClass('active');
+    }, 3200);
+    setTimeout(function() {
+      $('.img27').addClass('active');
+    }, 3200);
+    setTimeout(function() {
+      $('.img27').removeClass('active');
+    }, 4800);
+    }
+
+    function block8() {
+      $('.img28').addClass('active');
+    setTimeout(function() {
+      $('.img28').removeClass('active');
+    }, 1400);
+    setTimeout(function() {
+      $('.img29').addClass('active');
+    }, 1400);
+    setTimeout(function() {
+      $('.img29').removeClass('active');
+    }, 2800);
+    }
 
 });
 
-// overlay
+//email encode
+$("a.mail").html($("a.mail").html().replace("*", "@").replace(/~/g, ".").split("").reverse().join(""));
 
+$("a.mail").on("click", function(){
+    var href = $(this).attr("href");
+    $(this).attr("href", href.replace("dont-spam-me-bro", "gkbagdasaryan18"));
+});
+
+// overlay
 function openNav() {
     document.getElementById("overlay").style.width = "100%";
 }
@@ -27,8 +226,20 @@ $('#contact').click(function() {
   openNav();
 });
 
-//typewriter for land
+//scroll to top on refresh
+window.onbeforeunload = function () {
+        window.scrollTo(0,0);
+}
 
+//animate scroll to secondary page
+$("#getstarted").click(function() {
+    $("html, body").animate({
+        scrollTop: $("#my-block-1").offset().top
+    }, 1500);
+});
+
+
+//typewriter for land
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
