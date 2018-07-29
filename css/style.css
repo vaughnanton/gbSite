@@ -288,12 +288,19 @@ footer {
 
 /* media queries */
 
-@media (max-width:600px) {
-	.overlay {
+@media screen and (max-width:600px) {
+	.overlay a, .overlay span {
 		font-size:25px!important;
+	}
+	.overlay .closebtn {
+		right:35px;
+		font-size:40px;
 	}
 	footer {
 		font-size:11px;
+	}
+	.image-title {
+		font-size:5em!important;
 	}
 }
 
