@@ -205,6 +205,10 @@ $(document).ready(function() {
 
 });
 
+$(".logo").on("click", function(){
+  window.location.reload();
+});
+
 //email encode
 $("a.mail").html($("a.mail").html().replace("*", "@").replace(/~/g, ".").split("").reverse().join(""));
 
@@ -222,7 +226,7 @@ function closeNav() {
     document.getElementById("overlay").style.width = "0%";
 }
 
-$('#contact').click(function() {
+$('#contact, .burger').click(function() {
   openNav();
 });
 
@@ -311,3 +315,14 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+
+    window.sr = ScrollReveal({ reset: false });
+    sr.reveal('.block-1', { duration: 500, rotate: {y: 65, x: 30, z: 30}, opacity: .7, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-3', { duration: 500, rotate: {y: 65, x: 30, z: 30}, opacity: .7, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-5', { duration: 500, rotate: {y: 65, x: 30, z: 30}, opacity: .7, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-7', { duration: 500, rotate: {y: 65, x: 30, z: 30}, opacity: .7, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-2', { duration: 500, rotate: {y: -65, x: -30, z: -30}, opacity: .7, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-4', { duration: 500, rotate: {y: -65, x: -30, z: -30}, opacity: .7, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-6', { duration: 500, rotate: {y: -65, x: -30, z: -30}, opacity: .7, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-8', { duration: 500, rotate: {y: -65, x: -30, z: -30}, opacity: .7, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
