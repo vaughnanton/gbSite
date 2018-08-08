@@ -239,6 +239,7 @@ a {
 	position:absolute;
 	top:50px;
 	max-width:91%;
+	margin:0 auto;
 }
 
 .image-block img {
