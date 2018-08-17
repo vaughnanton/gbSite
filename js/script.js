@@ -244,10 +244,9 @@ $("#getstarted").click(function() {
 
 //detect mobile safari ONLY
 
-var isIphone = /(iPhone)/i.test(navigator.userAgent);
-
 var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
+var isIphone = /(iPhone)/i.test(navigator.userAgent);
 
 
 if(isIphone && isSafari){
