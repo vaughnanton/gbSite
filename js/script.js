@@ -210,8 +210,6 @@ $(".logo").on("click", function(){
 });
 
 //email encode
-$("a.mail").html($("a.mail").html().replace("*", "@").replace(/~/g, ".").split("").reverse().join(""));
-
 $("a.mail").on("click", function(){
     var href = $(this).attr("href");
     $(this).attr("href", href.replace("dont-spam-me-bro", "gkbagdasaryan18"));
