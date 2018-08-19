@@ -412,6 +412,10 @@ footer {
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
+.mail {
+	letter-spacing:-1.25px !important;
+}
+
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
