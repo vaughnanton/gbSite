@@ -317,11 +317,11 @@ var TxtType = function(el, toRotate, period) {
 
 
     window.sr = ScrollReveal({ reset: false });
-    sr.reveal('.block-1', { duration: 500, rotate: {y: 65, x: 30, z: 30}, opacity: .7, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
-    sr.reveal('.block-3', { duration: 500, rotate: {y: 65, x: 30, z: 30}, opacity: .7, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
-    sr.reveal('.block-5', { duration: 500, rotate: {y: 65, x: 30, z: 30}, opacity: .7, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
-    sr.reveal('.block-7', { duration: 500, rotate: {y: 65, x: 30, z: 30}, opacity: .7, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
-    sr.reveal('.block-2', { duration: 500, rotate: {y: -65, x: -30, z: -30}, opacity: .7, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
-    sr.reveal('.block-4', { duration: 500, rotate: {y: -65, x: -30, z: -30}, opacity: .7, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
-    sr.reveal('.block-6', { duration: 500, rotate: {y: -65, x: -30, z: -30}, opacity: .7, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
-    sr.reveal('.block-8', { duration: 500, rotate: {y: -65, x: -30, z: -30}, opacity: .7, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-1', { duration: 500, delay:300, rotate: {y: 65, x: 30, z: 30}, opacity: 0, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-3', { duration: 500, delay:300, rotate: {y: 65, x: 30, z: 30}, opacity: 0, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-5', { duration: 500, delay:300, rotate: {y: 65, x: 30, z: 30}, opacity: 0, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-7', { duration: 500, delay:300, rotate: {y: 65, x: 30, z: 30}, opacity: 0, scale: .6, easing: 'ease-in-out', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-2', { duration: 500, delay:300, rotate: {y: -65, x: -30, z: -30}, opacity: 0, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-4', { duration: 500, delay:300, rotate: {y: -65, x: -30, z: -30}, opacity: 0, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-6', { duration: 500, delay:300, rotate: {y: -65, x: -30, z: -30}, opacity: 0, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
+    sr.reveal('.block-8', { duration: 500, delay:300, rotate: {y: -65, x: -30, z: -30}, opacity: 0, scale: .6, easing: 'linear', mobile: true, useDelay: 'always'});
