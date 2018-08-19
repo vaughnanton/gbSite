@@ -236,9 +236,7 @@ a {
 }
 
 .image-block img:nth-of-type(2), .image-block img:nth-of-type(3), .image-block img:nth-of-type(4), .image-block img:nth-of-type(5), .image-block img:nth-of-type(6) {
-	position:absolute;
 	top:50px;
-	max-width:91%;
 	margin:0 auto;
 }
 
