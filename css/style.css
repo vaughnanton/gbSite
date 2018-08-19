@@ -96,7 +96,7 @@ a {
 /* header */
 
 .header-primary {
-  position: absolute;
+  position: fixed;
   background-color:#00000045;
   color:#000;
   top:0;
